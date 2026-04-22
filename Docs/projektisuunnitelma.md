@@ -18,28 +18,28 @@
 
 ## Projektin tiedot
 
-\<Projektin nimi>
+\muisTIKO?
 
-Tekijät:
+Tekijät: Ryhmä 6(Roni Huuskonen, Nora Virta, Bea Sudensalo, Ville Rossi)
 
 ## Projektin sisältö
 
 ### Kuvaus
 
-_Lyhyt kuvaus projektista. Minkälaista ohjelmistoa ollaan tekemässä?_
+_Tehdään muistipeli eri teemoilla ja peliasetuksilla. Peliin tulee asetuksia _
 
 ### Projektiryhmä
 
-_Ketä projektiin kuuluu ja mitkä ovat henkilöiden päävastuut._
-
 | Nimi           | Vastuurooli          |
 | -------------- | -------------------- |
-| Teppo Virtanen | Git-päällikkö        |
-| Satu Jokinen   | Dokumentti-päällikkö |
+| Roni Huuskonen | Git-päällikkö        |
+| Bea Sudensalo  | Dokumentti-päällikkö |
+| Nora Virta     | Tehtävä-päällikkö    |
+| Ville Rossi    | Laatupäällikkö       |
 
 ### Tavoite
 
-_Mikä on ohjelmistoprojektin tavoiteltu lopputulos?_
+_Toimiva muistipeli _
 
 ## Aikataulu
 
@@ -56,19 +56,19 @@ _Kirjaa tähän lukuun aikataulu. Millä tavoin projekti viedään läpi. Voitte
 
 ### Raportointi
 
-_Kuinka projekti raportoi toiminnastaan? Kuka raportoi, kenelle, ja milloin?_
+_Projektista raportoidaan viikkopalaverien pohjalta tehtyjen raporttien kautta, työtunnit raportoidaan yksilöittäin Exceliin ja keskenämme raportoimme eri viestintävälineiden kautta._
 
 ### Tuntikirjaukset
 
-_Kuinka projekti tekee tuntikirjausta? Missä se tehdään, ja miten se jaetaan?_
+_Kaikki kirjaavat omat tuntinsa valmiiseen Excel-pohjaan ja pitävät kirjaa tunneistaan._
 
 ### Palaverikäytänteet
 
-_Projektin viikkopalaveri pidetään xxx paikassa xxx. Kuka kirjoittaa palaveripöytäkirjan, ja missä ne elävät?_
+_Projektin viikkopalaveri pidetään perjantaina joustavasti kello 12 jälkeen paikassa Rajakadun kampus. Bea Sudensalo hoitaa palaveripöytäkirjan luonnin ja täyttämisen, pöytäkirja tulee kaikille ryhmän jäsenille näkyviin jaettuna tiedostona._
 
 ### Kommunikointitavat
 
-_Mitkä ovat projektin kommunikointikanavat? Viralliset, epäviralliset? Sisäiset, ulkoiset?_
+_Ryhmän jäsenet kommunikoivat projektin aikana Discordin, Trellon, Whatsappin ja Teamsin kautta_
 
 ### Dokumentointi
 
@@ -87,3 +87,4 @@ Esimerkiksi näin.
 | Riskit                                                       | Todennäköisyys |  Impakti | Minimointi                             |
 | ------------------------------------------------------------ | -------------- | -------- | -------------------------------------- |
 | Työntekijät eivät ole motivoituneita ja eivät saavu paikalle | Pieni          |  Suuri   | Pidetään työpaikalla kahvia ja pullaa. |
+| Menee hermot                                                 | Suuri          |  Suuri   | Pyydetään apua ja muistetaan tauot     |
