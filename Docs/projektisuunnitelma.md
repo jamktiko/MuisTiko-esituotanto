@@ -18,8 +18,8 @@
 
 ## Projektin tiedot
 
-Projektin nimi: muisTIKO?
-Tekijät: Ryhmä 6 (Roni Huuskonen, Nora Virta, Bea Sudensalo, Ville Rossi)
+- Projektin nimi: muisTIKO?
+- Tekijät: Ryhmä 6 (Roni Huuskonen, Nora Virta, Bea Sudensalo, Ville Rossi)
 
 ## Projektin sisältö
 ### Kuvaus
