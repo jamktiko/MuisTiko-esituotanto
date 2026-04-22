@@ -18,15 +18,13 @@
 
 ## Projektin tiedot
 
-\muisTIKO?
-
-Tekijät: Ryhmä 6(Roni Huuskonen, Nora Virta, Bea Sudensalo, Ville Rossi)
+Projektin nimi: muisTIKO?
+Tekijät: Ryhmä 6 (Roni Huuskonen, Nora Virta, Bea Sudensalo, Ville Rossi)
 
 ## Projektin sisältö
-
 ### Kuvaus
 
-_Tehdään muistipeli eri teemoilla ja peliasetuksilla. Peliin tulee asetuksia _
+muisTIKO? on muistipeli, jossa tarkoituksena on löytää kuvakorteille parit. Pelissä on lisäominaisuuksina erilaisia boostereita, joilla voi saada vinkkejä tai apua parien löytämiseen pelin aikana.
 
 ### Projektiryhmä
 
@@ -39,7 +37,7 @@ _Tehdään muistipeli eri teemoilla ja peliasetuksilla. Peliin tulee asetuksia _
 
 ### Tavoite
 
-_Toimiva muistipeli _
+Tavoitteena on saada sulavasti toimiva ja siistin näköinen peli, joka on mahdollisimman saavutettavissa.
 
 ## Aikataulu
 
@@ -47,10 +45,10 @@ _Kirjaa tähän lukuun aikataulu. Millä tavoin projekti viedään läpi. Voitte
 
 | Tapahtuma        | Päivämäärä | Muut tiedot/osanottajat                  |
 | ---------------- | ---------- | ---------------------------------------- |
-| Projekti alkaa   | 22.04.2025 | Ohjelmistoprojekti 1 alkaa               |
-| Idean valinta    | 24.04.2025 | Valitaan tuotantoon menevä projekti-idea |
+| Projekti alkaa   | 20.04.2026 | Ohjelmistoprojekti 1 alkaa               |
+| Idean valinta    | 21.04.2026 | Suunnitellaan ideoita ja vaihtoehtoja    |
 | ............     | pvm        | Kaikki muut tapahtumat listattuna        |
-| Projekti päättyy | 16.05.2025 | Ohjelmistoprojekti 1 päättyy             |
+| Projekti päättyy | 15.05.2026 | Ohjelmistoprojekti 1 päättyy             |
 
 ## Raportointi, kommunikointi ja dokumentointi
 
