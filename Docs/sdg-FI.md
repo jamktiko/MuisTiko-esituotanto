@@ -47,7 +47,7 @@
 
 ### 1. Miksi kestävä kehitys on tärkeää minulle tai tiimillemme?
 
-Vastaus
+Tarkoituksenamme on edistää tietojenkäsittelyn alaa parhaamme mukaan ilman liiallista ympäristön kuormitusta tai negatiivisia sivuvaikutuksia.
 
 ## Aihe
 
@@ -59,7 +59,7 @@ Vastaus
 <!-- Vieraslajien torjunta (SDG15: Maanpäällinen elämä) -->
 <!-- Kulttuuriperinnön suojeleminen (SDG11: Kestävät kaupungit ja yhteisöt) -->
 
-Vastaus
+Aihe keskittyy viihteen ja henkilökohtaisen henkisen hyvinvoinnin ylläpitämiseen.
 
 ## Toteutus
 
@@ -73,7 +73,7 @@ Vastaus
 <!-- Miten sovelluksen vaatima palvelinkapasiteetti on mitoitettu? -->
 <!-- Käytetäänkö sovelluksessa tai sen kehitysprosessissa tekoälyä? -->
 
-Vastaus
+Sovellus sisältää vain sen toimintaan välttämätöntä tietoa. Olemassaolevia rakenteita, kuvia ja muita osia on pyritty käyttämään mahdollisimman paljon hyödyksi, kuitenkin tekemällä sovelluksesta uniikin. Sovelluksen kehitysprosessissa käytetään tekoälyä vain tarpeen vaatiessa, ja sen käyttöä rajataan pääosin korjauksiin tarkoitettuihin toimintoihin, eikä esimerkiksi kokonaan asioiden luomiseen.
 
 ### 4. Millä tavoin sovellus saattaa välillisesti lisätä tai vähentää luonnonvarojen kulutusta?
 
@@ -84,7 +84,7 @@ Vastaus
 <!-- Kannustaako sovellus muuhun kulutukseen? (esim. sovellus on verkkokauppa) -->
 <!-- Millä tavoin sovellus saattaa muuttaa käyttäjän toimintaa? (esim. lisätä tai vähentää yksityisautoilua) -->
 
-Vastaus
+Sovellus ei kannusta muuhun kulutukseen, eikä sen käyttö edellytä uusia kättäjälaitteita tai lisätarvikkeita.
 
 ### 5. Kuinka sovelluksen pitkäikäisyys on varmistettu?
 
@@ -95,7 +95,7 @@ Vastaus
 <!-- Onko sovellus mukautettavissa muuttuviin tarpeisiin ja vaatimuksiin? -->
 <!-- Onko sovelluksen lähdekoodi ja kehitysprosessi dokumentoitu? -->
 
-Vastaus
+Sovelluksen kehitysprosessi ja lähdekoodi on dokumentoitu.
 
 ### 6. Kuinka sovelluksessa on huomioitu saavutettavuus ja yhdenvertaisuus?
 
