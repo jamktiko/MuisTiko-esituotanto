@@ -1,16 +1,12 @@
---START
-This is a example template, which you can use. Version 1.0.
---END
+
 # MuisTiko
 
-Muistipeli eri vaikeustasoilla
+Julkinen muistipeli
 
 ## Kuvaus
 
 Peli suunnattu nuorille ja innokkaille pulmaratkojille. Pelissä voi valita eri korttimäärän ja eri teemojen väliltä. Pelistä
 voi tehdä vaikeamman aikarajalla tai helpottaa vinkeillä. Peli näyttää myös montako paria sait kerättyä.
-
-## Getting Started
 
 ### Riippuvudet
 
@@ -21,7 +17,7 @@ voi tehdä vaikeamman aikarajalla tai helpottaa vinkeillä. Peli näyttää myö
 - Pelin löytää ilmaisena internetistä
 - Any modifications needed to be made to files/folders
 
-### Executing program
+### Ohjelman suorittaminen
 
 - How to run the program
 - Step-by-step bullets
@@ -61,6 +57,3 @@ This project is licensed under the CC BY-SA 4.0 License - see the LICENSE.md fil
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
