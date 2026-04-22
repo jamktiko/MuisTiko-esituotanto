@@ -1,23 +1,22 @@
 
 # MuisTiko
 
-Julkinen muistipeli
+Public memory game
 
-## Kuvaus
+## description
 
-Peli suunnattu nuorille ja innokkaille pulmaratkojille. Pelissä voi valita eri korttimäärän ja eri teemojen väliltä. Pelistä
-voi tehdä vaikeamman aikarajalla tai helpottaa vinkeillä. Peli näyttää myös montako paria sait kerättyä.
+The game is aimed at young and enthusiastic puzzlers. In the game you can choose between different card numbers and different themes. You can make the game more difficult with a time limit or make it easier with hints. The game also shows how many pairs you collected.
 
-### Riippuvudet
+### Dependencies
 
 - Describe any prerequisites, libraries, frameworks, etc., the sofware uses.
 
-### Mistä löytää
+### Installing
 
-- Pelin löytää ilmaisena internetistä
+- Finding the game on the internet
 - Any modifications needed to be made to files/folders
 
-### Ohjelman suorittaminen
+### Executing Program
 
 - How to run the program
 - Step-by-step bullets
@@ -26,7 +25,7 @@ voi tehdä vaikeamman aikarajalla tai helpottaa vinkeillä. Peli näyttää myö
 code blocks for commands
 ```
 
-## APUA
+## Help
 
 Any advise for common problems or issues.
 
@@ -34,21 +33,21 @@ Any advise for common problems or issues.
 command to run if program contains helper info
 ```
 
-## Tekijät
+## Authors
 
 Ville Rossi
 Roni Huuskonen
 Nora Virta
 Bea Sudensalo
 
-## Versio Historia
+## Version History
 
 - 0.2
   - Various bug fixes and optimizations
 - 0.1
   - Initial Release
 
-## Lisenssi
+## Licence
 
 This project is licensed under the CC BY-SA 4.0 License - see the LICENSE.md file for details
 
