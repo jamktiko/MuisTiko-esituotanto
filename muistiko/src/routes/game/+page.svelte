@@ -53,6 +53,10 @@
 
 	// 4. Handle choices (using if/else to avoid linter "expression" errors)
 	const handleChoice = (card: Card) => {
+		if (disabled) return;
+		if (card.matched) return;
+		if (card === choiceOne) return;
+
 		if (choiceOne) {
 			choiceTwo = card;
 		} else {
@@ -80,9 +84,9 @@
 				);
 				resetTurn();
 			} else {
-				setTimeout(() => resetTurn(), 500);
+				setTimeout(() => resetTurn(), 1000);
 			}
-			disabled = false;
+			setTimeout(() => (disabled = false), 1000);
 		}
 	});
 </script>
