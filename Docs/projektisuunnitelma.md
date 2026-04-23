@@ -44,10 +44,25 @@ Tavoitteena on saada sulavasti toimiva ja siistin näköinen peli, joka on mahdo
 
 | Tapahtuma        | Päivämäärä | Muut tiedot/osanottajat                  |
 | ---------------- | ---------- | ---------------------------------------- |
-| Projekti alkaa   | 20.04.2026 | Ohjelmistoprojekti 1 alkaa               |
-| Idean valinta    | 21.04.2026 | Suunnitellaan ideoita ja vaihtoehtoja    |
-| Idean viimeistely, Pohjan rakentaminen | 22.04.2026 | Idean viimeistelyä, rakenteiden testailua, vaihtoehtojen rajaamista |
-| Projekti päättyy | 15.05.2026 | Ohjelmistoprojekti 1 päättyy             |
+| Projekti alkaa   | 20.04.2026 | Ryhmäytyminen, projektin ideointi |
+| Ideointi jatkuu  | 21.04.2026 | Projektinhallinnan, Trellon, Gitin ja kestävän kehityksen tietoisku |
+| Idean valinta    | 22.04.2026 | Lopullisen idean valinta |
+| Projektisuunnitelma | 23.04.2026 | Projektisuunnitelman kirjoitusta, testailua ja teknologioihin tutustumista |
+| Projektisuunnitelman esitys | 24.04.2026 | Projektisuunnitelman esittäminen opettajille, suunnittelu ja valmistautuminen tuotantoon, työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |           
+| Projektin tuotantoa | 27.04.2026 |  |                
+| Projektin tuotantoa | 28.04.2026 |  |                
+| Projektin tuotantoa | 29.04.2026 |  |                
+| Projektin tuotantoa | 30.04.2026 | Työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |                
+| Projektin tuotantoa | 04.05.2026 |  |                
+| Projektin tuotantoa | 05.05.2026 |  |   
+| Projektin tuotantoa | 06.05.2026 |  |
+| Projektin tuotantoa | 07.05.2026 |  |
+| Projektin tuotantoa | 08.05.2026 | Työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |
+| Projektin viimeistelyä | 11.05.2026 | Loppuesitysinfo |
+| Projekti valmiiksi | 12.05.2026 | Loppumateriaalin tuottaminen |
+| Esityksen viimeistely | 13.05.2026 | Esityksen viimeistelyt ja harjoittelu 9-12, loppuesitykset 12 |
+| ETÄTYÖSKENTELY, Projekti päättyy | 15.05.2026 | Näyttödokumenttien koostaminen, työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |
+| Opintojaksojen näyttökeskustelut | 18.-19.05.2026 |  |
 
 ## Raportointi, kommunikointi ja dokumentointi
 
@@ -73,11 +88,12 @@ Dokumentaatio koostuu tästä projektisuunnitelmasta, erilaisista Moodleen palau
 
 ### Dokumenttien hallinta
 
-_Kuvaa dokumenttien säilytys; kenellä on oikeudet dokumenttien hallintaan, miten backupit on hoidettu, kuinka dokumentteja versioidaan (esim. 1.0, 1.1, 1.2 jne.) ja nimetään (onko esim. dokumentin nimessä versionumero)._
+Dokumentteja säilyttävät kaikki ryhmän jäsenet, päävastuussa dokumentointipäällikkö. Dokumenttien nimeämisessä käytetään ryhmän numeroa (Ryhmä 6) ja Moodlen palautuslaatikoiden dokumenttinimikkeitä.
 
 ## Riskien hallinta
 
 | Riskit                                                       | Todennäköisyys |  Impakti | Minimointi                             |
 | ------------------------------------------------------------ | -------------- | -------- | -------------------------------------- |
-| Työntekijät eivät ole motivoituneita ja eivät saavu paikalle | Pieni          |  Suuri   | Pidetään tarpeeksi taukoja ja jaetaan työt mahdollisimman tasaisesti |
-| Menee hermot                                                 | Suuri          |  Suuri   | Pyydetään apua ja muistetaan tauot     |
+| Työntekijät eivät ole motivoituneita ja eivät saavu paikalle | Pieni |  Suuri | Pidetään huoli kaikkien yhteisestä jaksamisesta, kannustetaan muita liittymään työskentelyyn |
+| Menee hermot | Suuri |  Suuri | Pyydetään apua ja muistetaan tauot | 
+| Ei saada mitään tehtyä | Pieni | Hyvin suuri | Yritetään tehdä jotain |
