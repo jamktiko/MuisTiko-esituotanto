@@ -61,7 +61,7 @@ Tavoitteena on saada sulavasti toimiva ja siistin näköinen peli, joka on mahdo
 | Projektin viimeistelyä | 11.05.2026 | Loppuesitysinfo |
 | Projekti valmiiksi | 12.05.2026 | Loppumateriaalin tuottaminen |
 | Esityksen viimeistely | 13.05.2026 | Esityksen viimeistelyt ja harjoittelu 9-12, loppuesitykset 12 |
-| Projekti päättyy | 15.05.2026 | Näyttödokumenttien koostaminen, työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |
+| ETÄTYÖSKENTELY, Projekti päättyy | 15.05.2026 | Näyttödokumenttien koostaminen, työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |
 | Opintojaksojen näyttökeskustelut | 18.-19.05.2026 |  |
 
 ## Raportointi, kommunikointi ja dokumentointi
