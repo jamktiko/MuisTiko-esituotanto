@@ -95,5 +95,5 @@ Dokumentteja säilyttävät kaikki ryhmän jäsenet, päävastuussa dokumentoint
 | Riskit                                                       | Todennäköisyys |  Impakti | Minimointi                             |
 | ------------------------------------------------------------ | -------------- | -------- | -------------------------------------- |
 | Työntekijät eivät ole motivoituneita ja eivät saavu paikalle | Pieni |  Suuri | Pidetään huoli kaikkien yhteisestä jaksamisesta, kannustetaan muita liittymään työskentelyyn |
-| Menee hermot | Suuri |  Suuri | Pyydetään apua ja muistetaan tauot | 
+| Menee hermot | Suuri |  Pieni | Pyydetään apua ja muistetaan tauot | 
 | Ei saada mitään tehtyä | Pieni | Hyvin suuri | Yritetään tehdä jotain |
