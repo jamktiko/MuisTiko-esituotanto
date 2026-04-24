@@ -1,20 +1,16 @@
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
-
-	const startGame = () => {
+	const aloitaPeli = () => {
 		window.location.href = '/settings';
 	};
 </script>
 
 <div class="landing-page">
-	<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
-
 	<main class="main-content">
 		<div class="intro">
 			<div class="logo">muisTIKO?</div>
 			<p>Tähän tekstiä</p>
 		</div>
-		<button class="start-button" onclick={startGame}> PELAA </button>
+		<button class="start-button" onclick={aloitaPeli}> PELAA </button>
 	</main>
 
 	<footer class="footer">

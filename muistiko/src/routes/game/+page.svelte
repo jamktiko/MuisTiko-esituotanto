@@ -1,5 +1,13 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import SingleCard from '$lib/components/SingleCard.svelte';
+	import { pelinTila, haeTeemanData, haeKuvanPolku } from '$lib/gameSettings.svelte';
+
+	// trackaa teemaa reaktiivisesti
+	let teema = $derived(pelinTila.teema);
+
+	const imgCover =
+		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/cover.png';
 
 	// interface korteille ettei typescript itke -bea
 	interface Card {
@@ -8,39 +16,34 @@
 		id?: number;
 	}
 
-	const imgCover =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/cover.png';
-	const imgHelmet =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/helmet-1.png';
-	const imgPotion =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/potion-1.png';
-	const imgRing =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/ring-1.png';
-	const imgScroll =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/scroll-1.png';
-	const imgShield =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/shield-1.png';
-	const imgSword =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/sword-1.png';
-
-	const cardImages: Card[] = [
-		{ src: imgHelmet, matched: false },
-		{ src: imgPotion, matched: false },
-		{ src: imgRing, matched: false },
-		{ src: imgScroll, matched: false },
-		{ src: imgShield, matched: false },
-		{ src: imgSword, matched: false }
-	];
-
-	// 2. State Runes with explicit Types
+	let cardImages: Card[] = [];
 	let cards = $state<Card[]>([]);
 	let turns = $state(0);
 	let choiceOne = $state<Card | null>(null);
 	let choiceTwo = $state<Card | null>(null);
 	let disabled = $state(false);
 
-	// 3. Shuffle logic
-	const shuffledCards = () => {
+	async function lataaTeemanData() {
+		try {
+			const currentTheme = pelinTila.teema;
+			const themeData = await haeTeemanData(currentTheme);
+
+			cardImages = themeData.map((item: { pic: string }) => ({
+				src: haeKuvanPolku(currentTheme, item.pic),
+				matched: false
+			}));
+
+			sekoitaKortit();
+		} catch (error) {
+			console.error('Error loading theme data:', error);
+		}
+	}
+
+	onMount(() => {
+		lataaTeemanData();
+	});
+
+	const sekoitaKortit = () => {
 		const shuffled = [...cardImages, ...cardImages]
 			.sort(() => Math.random() - 0.5)
 			.map((card) => ({ ...card, id: Math.random() }));
@@ -51,8 +54,7 @@
 		choiceTwo = null;
 	};
 
-	// 4. Handle choices (using if/else to avoid linter "expression" errors)
-	const handleChoice = (card: Card) => {
+	const käsitteleValinta = (card: Card) => {
 		if (disabled) return;
 		if (card.matched) return;
 		if (card === choiceOne) return;
@@ -64,17 +66,12 @@
 		}
 	};
 
-	// 5. Reset Turn
-	const resetTurn = () => {
+	const nollaaVuoro = () => {
 		choiceOne = null;
 		choiceTwo = null;
 		turns = turns + 1;
 	};
 
-	// Initialize game
-	shuffledCards();
-
-	// Compare 2 selected cards
 	$effect(() => {
 		if (choiceOne && choiceTwo) {
 			disabled = true;
@@ -82,9 +79,9 @@
 				cards = cards.map((card) =>
 					card.src === choiceOne!.src ? { ...card, matched: true } : card
 				);
-				resetTurn();
+				nollaaVuoro();
 			} else {
-				setTimeout(() => resetTurn(), 1000);
+				setTimeout(() => nollaaVuoro(), 1000);
 			}
 			setTimeout(() => (disabled = false), 1000);
 		}
@@ -93,7 +90,7 @@
 
 <main>
 	<div class="App">
-		<button onclick={shuffledCards}>Aloita alusta</button>
+		<button onclick={sekoitaKortit}>Aloita alusta</button>
 
 		<div class="card-grid">
 			{#each cards as card (card.id)}
@@ -101,7 +98,7 @@
 					{card}
 					{imgCover}
 					{disabled}
-					{handleChoice}
+					handleChoice={käsitteleValinta}
 					flipped={card === choiceOne || card === choiceTwo || card.matched}
 				/>
 			{/each}
