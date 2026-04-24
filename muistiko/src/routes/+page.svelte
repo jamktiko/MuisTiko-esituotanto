@@ -2,7 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 
 	const startGame = () => {
-		window.location.href = '/game';
+		window.location.href = '/settings';
 	};
 </script>
 

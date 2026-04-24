@@ -108,6 +108,7 @@
 		</div>
 		<p>Turns: {turns}</p>
 	</div>
+	<p>Siirrot: {turns}</p>
 </main>
 
 <style>
