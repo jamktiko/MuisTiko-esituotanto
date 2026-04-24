@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SingleCard from '$lib/components/SingleCard.svelte';
+	
 
 	// interface korteille ettei typescript itke -bea
 	interface Card {
@@ -91,9 +92,9 @@
 	});
 </script>
 
-<main>
-	<div class="App">
-		<button onclick={shuffledCards}>Aloita alusta</button>
+
+<div class="App">
+	<button onclick={shuffledCards}>Aloita alusta</button>
 
 		<div class="card-grid">
 			{#each cards as card (card.id)}
@@ -109,7 +110,7 @@
 		<p>Turns: {turns}</p>
 	</div>
 	<p>Siirrot: {turns}</p>
-</main>
+
 
 <style>
 	.App {
