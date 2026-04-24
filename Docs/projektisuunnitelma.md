@@ -76,7 +76,7 @@ Kaikki kirjaavat omat tuntinsa valmiiseen Excel-pohjaan ja pitävät kirjaa tunn
 
 ### Palaverikäytänteet
 
-Projektin viikkopalaveri pidetään perjantaina joustavasti kello 12 jälkeen paikassa Rajakadun kampus. Bea Sudensalo hoitaa palaveripöytäkirjan luonnin ja täyttämisen, pöytäkirja tulee kaikille ryhmän jäsenille näkyviin jaettuna tiedostona.
+Projektin viikkopalaveri pidetään perjantaina joustavasti kello 12 jälkeen paikassa Rajakadun kampus. Bea Sudensalo hoitaa viikkoraportin luonnin ja täyttämisen, raportti tulee kaikille ryhmän jäsenille näkyviin jaettuna tiedostona.
 
 ### Kommunikointitavat
 
