@@ -1,11 +1,42 @@
 <script lang="ts">
+	import Modal from "$lib/components/Modal.svelte";
+  let showInfo = $state(false)
 	const startGame = () => {
 		window.location.href = '/game';
 	};
+  const openInfo = () => {
+  showInfo = true
+	}
+	const closeInfo = () => {
+		showInfo = false
+	}
 </script>
 
 <div class="landing-page">
 	<header class="header">
+	<button onclick={openInfo} class="avaaInfo">Info</button>
+	{#if showInfo}
+	<Modal>
+{#snippet header()}
+	<h1><strong>Magic Match</strong> on muistipeli, jossa tavoitteena on löytää kaikki korttiparit.</h1>
+{/snippet}
+
+
+	<h3>Säännöt:</h3>
+					<ul>
+						<li>Klikkaa kortteja löytääksesi parit</li>
+						<li>Kun löydät parin, kortit jäävät näkyviin</li>
+						<li>Peli päättyy kun kaikki parit on löydetty</li>
+						<li>Yritä löytää kaikki parit mahdollisimman vähillä siirroilla</li>
+					</ul>
+
+
+{#snippet footer()}
+		<button class="suljeInfo" onclick={closeInfo}>Sulje</button>
+{/snippet}
+
+	</Modal>
+	{/if}
 		<h1>Tänne nappuloita</h1>
 	</header>
 
