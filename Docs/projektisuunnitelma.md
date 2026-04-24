@@ -52,7 +52,7 @@ Tavoitteena on saada sulavasti toimiva ja siistin näköinen peli, joka on mahdo
 | Projektin tuotantoa | 27.04.2026 |  |                
 | Projektin tuotantoa | 28.04.2026 |  |                
 | Projektin tuotantoa | 29.04.2026 |  |                
-| Projektin tuotantoa | 30.04.2026 | Työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti |                
+| Projektin tuotantoa | 30.04.2026 | Työaikakirjanpidon täyttö ja palautus, viikkopalaveri ja viikkoraportti, sovelluksen ensimmäinen testijulkaisu |                
 | Projektin tuotantoa | 04.05.2026 |  |                
 | Projektin tuotantoa | 05.05.2026 |  |   
 | Projektin tuotantoa | 06.05.2026 |  |
