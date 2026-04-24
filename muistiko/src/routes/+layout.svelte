@@ -1,9 +1,14 @@
 <script lang="ts">
 	import './layout.css';
+	import muistikoLogo from '$lib/assets/muistikoLogo.svg';
 
 	let { children } = $props();
+	import Header from '$lib/components/Header.svelte';
 </script>
 
-<svelte:head><title>Matching Game</title></svelte:head>
+<svelte:head><link rel="icon" href={muistikoLogo} /></svelte:head>
 
-{@render children()}
+<Header pelinLogo="muistikoLogo.png" />
+<main>
+	{@render children()}
+</main>
