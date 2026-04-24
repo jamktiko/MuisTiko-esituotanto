@@ -1,13 +1,13 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
+
 	const startGame = () => {
 		window.location.href = '/game';
 	};
 </script>
 
 <div class="landing-page">
-	<header class="header">
-		<h1>Tänne nappuloita</h1>
-	</header>
+	<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
 
 	<main class="main-content">
 		<div class="intro">
@@ -29,20 +29,9 @@
 		min-height: 100vh;
 	}
 
-	.header {
-		padding: 2rem;
-		text-align: center;
-		background-color: #aaa;
-	}
-
 	.logo {
 		font-size: 4rem;
 		margin-bottom: 1rem;
-	}
-
-	.header h1 {
-		font-size: 3rem;
-		margin: 0;
 	}
 
 	.main-content {
