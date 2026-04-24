@@ -1,6 +1,5 @@
 <script lang="ts">
 	import SingleCard from '$lib/components/SingleCard.svelte';
-	import Header from '$lib/components/Header.svelte';
 
 	// interface korteille ettei typescript itke -bea
 	interface Card {
@@ -92,29 +91,30 @@
 	});
 </script>
 
-<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
-<div class="App">
-	<button onclick={shuffledCards}>Aloita alusta</button>
+<main>
+	<div class="App">
+		<button onclick={shuffledCards}>Aloita alusta</button>
 
-	<div class="card-grid">
-		{#each cards as card (card.id)}
-			<SingleCard
-				{card}
-				{imgCover}
-				{disabled}
-				{handleChoice}
-				flipped={card === choiceOne || card === choiceTwo || card.matched}
-			/>
-		{/each}
+		<div class="card-grid">
+			{#each cards as card (card.id)}
+				<SingleCard
+					{card}
+					{imgCover}
+					{disabled}
+					{handleChoice}
+					flipped={card === choiceOne || card === choiceTwo || card.matched}
+				/>
+			{/each}
+		</div>
+		<p>Turns: {turns}</p>
 	</div>
-	<p>Turns: {turns}</p>
-</div>
+</main>
 
 <style>
 	.App {
 		max-width: 860px;
 		margin: 0 auto;
-		background: #aaa;
+		background: #fff;
 		min-height: 100vh;
 		text-align: center;
 		padding: 1rem;
@@ -122,7 +122,7 @@
 	}
 
 	button {
-		background: none;
+		background: #aaa;
 		border: 2px solid #fff;
 		padding: 6px 12px;
 		border-radius: 4px;
