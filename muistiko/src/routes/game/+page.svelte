@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SingleCard from '$lib/components/SingleCard.svelte';
+	import Header from '$lib/components/Header.svelte';
 
 	// interface korteille ettei typescript itke -bea
 	interface Card {
@@ -91,8 +92,8 @@
 	});
 </script>
 
+<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
 <div class="App">
-	<h1>Tähän jotain</h1>
 	<button onclick={shuffledCards}>Aloita alusta</button>
 
 	<div class="card-grid">
@@ -119,9 +120,7 @@
 		padding: 1rem;
 		color: white;
 	}
-	h1 {
-		color: white;
-	}
+
 	button {
 		background: none;
 		border: 2px solid #fff;
