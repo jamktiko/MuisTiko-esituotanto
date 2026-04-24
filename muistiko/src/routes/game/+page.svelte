@@ -106,7 +106,7 @@
 			/>
 		{/each}
 	</div>
-	<p>Turns: {turns}</p>
+	<p>Siirrot: {turns}</p>
 </div>
 
 <style>

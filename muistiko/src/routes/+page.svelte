@@ -1,6 +1,6 @@
 <script lang="ts">
 	const startGame = () => {
-		window.location.href = '/game';
+		window.location.href = '/settings';
 	};
 </script>
 
