@@ -1,8 +1,15 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
 
+	import Modal from '$lib/components/Modal.svelte';
 	const startGame = () => {
 		window.location.href = '/game';
+	};
+	const openInfo = () => {
+		showInfo = true;
+	};
+	const closeInfo = () => {
+		showInfo = false;
 	};
 </script>
 
