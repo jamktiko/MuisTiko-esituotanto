@@ -18,9 +18,9 @@
 		{@render header?.()}
 	</header>
 
-  <main>
+  
 	{@render children()}
-  </main>
+ 
 	<footer>
 		{@render footer?.()}
 	</footer>
