@@ -17,7 +17,7 @@
 		margin: 10px;
 		padding: 10px 20px;
 		background-color: var(--main-color);
-		color: white;
+		color: black;
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;

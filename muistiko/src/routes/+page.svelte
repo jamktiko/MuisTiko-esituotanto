@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
+	
 
 	const startGame = () => {
 		window.location.href = '/game';
@@ -7,7 +7,7 @@
 </script>
 
 <div class="landing-page">
-	<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
+	
 
 	<main class="main-content">
 		<div class="intro">
