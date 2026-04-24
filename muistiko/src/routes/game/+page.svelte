@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SingleCard from '$src/lib/components/SingleCard.svelte';
+	import SingleCard from '$lib/components/SingleCard.svelte';
 
 	// interface korteille ettei typescript itke -bea
 	interface Card {
