@@ -8,7 +8,7 @@
 
 <svelte:head><link rel="icon" href={muistikoLogo} /></svelte:head>
 
-<Header pelinLogo="muistikoLogo.png" />
+<Header pelinLogo="/data/opettajat/kromattu_heikki.png" />
 <main>
 	{@render children()}
 </main>
