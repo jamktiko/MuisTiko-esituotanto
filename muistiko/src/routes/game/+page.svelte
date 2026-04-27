@@ -1,87 +1,73 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import SingleCard from '$lib/components/SingleCard.svelte';
-	import { pelinTila, haeTeemanData, haeKuvanPolku } from '$lib/gameSettings.svelte';
+	import {
+		gameState,
+		type Card,
+		initalizeCards,
+		resetCards,
+		setTurns,
+		setChoiceOne,
+		setChoiceTwo,
+		incrementTurns,
+		turnOverCorrectPair
+	} from '$lib/state/gameState.svelte';
+	import { CARD_IMAGE_COVER_URL } from '$lib/constants';
 
-	// trackaa teemaa reaktiivisesti
-	let teema = $derived(pelinTila.teema);
+	// Voidaan käyttää myöhemmin kun pitää lisätä muutakin teemaan kuin vain kortit
+	let theme = $derived(gameState.theme);
 
-	const imgCover =
-		'https://raw.githubusercontent.com/iamshaunjp/React-Firebase/lesson-58/magic-memory/public/img/cover.png';
+	const imgCover = CARD_IMAGE_COVER_URL;
 
-	// interface korteille ettei typescript itke -bea
-	interface Card {
-		src: string;
-		matched: boolean;
-		id?: number;
-	}
+	// Haetaan koko sovelluksen tila yhdestä paikasta
+	let cards = $derived(gameState.cards);
+	let turns = $derived(gameState.turns);
+	let choiceOne = $derived(gameState.choiceOne);
+	let choiceTwo = $derived(gameState.choiceTwo);
 
-	let cardImages: Card[] = [];
-	let cards = $state<Card[]>([]);
-	let turns = $state(0);
-	let choiceOne = $state<Card | null>(null);
-	let choiceTwo = $state<Card | null>(null);
 	let disabled = $state(false);
 
-	async function lataaTeemanData() {
-		try {
-			const currentTheme = pelinTila.teema;
-			const themeData = await haeTeemanData(currentTheme);
-
-			cardImages = themeData.map((item: { pic: string }) => ({
-				src: haeKuvanPolku(currentTheme, item.pic),
-				matched: false
-			}));
-
-			sekoitaKortit();
-		} catch (error) {
-			console.error('Error loading theme data:', error);
-		}
-	}
-
-	onMount(() => {
-		lataaTeemanData();
+	onMount(async () => {
+		// Ladataan korttien tiedot ja asetetaan ne tilaan (gameSettings.svelte.ts)
+		await initalizeCards();
 	});
 
-	const sekoitaKortit = () => {
-		const shuffled = [...cardImages, ...cardImages]
-			.sort(() => Math.random() - 0.5)
-			.map((card) => ({ ...card, id: Math.random() }));
+	// Aloitetaan uusi peli, resettataan kortit ja muut muuttujat
+	const startNewGame = () => {
+		resetCards();
 
-		cards = shuffled;
-		turns = 0;
-		choiceOne = null;
-		choiceTwo = null;
+		setTurns(0);
+		setChoiceOne(null);
+		setChoiceTwo(null);
 	};
 
-	const käsitteleValinta = (card: Card) => {
+	const handlePlayerChoice = (card: Card) => {
 		if (disabled) return;
 		if (card.matched) return;
 		if (card === choiceOne) return;
 
 		if (choiceOne) {
-			choiceTwo = card;
+			setChoiceTwo(card);
 		} else {
-			choiceOne = card;
+			setChoiceOne(card);
 		}
 	};
 
-	const nollaaVuoro = () => {
-		choiceOne = null;
-		choiceTwo = null;
-		turns = turns + 1;
+	const startNewRound = () => {
+		setChoiceOne(null);
+		setChoiceTwo(null);
+		incrementTurns(1);
 	};
 
 	$effect(() => {
 		if (choiceOne && choiceTwo) {
 			disabled = true;
 			if (choiceOne.src === choiceTwo.src) {
-				cards = cards.map((card) =>
-					card.src === choiceOne!.src ? { ...card, matched: true } : card
-				);
-				nollaaVuoro();
+				// Käännetään oikean parin kortit kuvapuoli ylöspäin
+				turnOverCorrectPair();
+				startNewRound();
 			} else {
-				setTimeout(() => nollaaVuoro(), 1000);
+				setTimeout(() => startNewRound(), 1000);
 			}
 			setTimeout(() => (disabled = false), 1000);
 		}
@@ -90,15 +76,14 @@
 
 <main>
 	<div class="App">
-		<button onclick={sekoitaKortit}>Aloita alusta</button>
-
+		<button onclick={startNewGame}>Aloita alusta</button>
 		<div class="card-grid">
 			{#each cards as card (card.id)}
 				<SingleCard
 					{card}
 					{imgCover}
 					{disabled}
-					handleChoice={käsitteleValinta}
+					handleChoice={handlePlayerChoice}
 					flipped={card === choiceOne || card === choiceTwo || card.matched}
 				/>
 			{/each}

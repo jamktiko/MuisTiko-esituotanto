@@ -2,8 +2,9 @@
 	import SettingSelector from '$lib/components/SettingSelector.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import { goto } from '$app/navigation';
-	import { pelinTila, asetaTeema } from '$lib/gameSettings.svelte';
-	import type { Teema } from '$lib/gameSettings.svelte';
+	import { resolve } from '$app/paths';
+	import { gameState, setTheme } from '$lib/state/gameState.svelte';
+	import type { Theme } from '$lib/state/gameState.svelte';
 
 	interface Asetusvalikko {
 		teksti: string;
@@ -12,22 +13,21 @@
 		type?: 'theme' | 'setting';
 	}
 
-	function käynnistäPeli() {
-		goto('/game') // TÄÄ JAKEN KANSSA SELVITYKSEEN
-			.then(() => {})
-			.catch((err) => console.error(err));
+	async function kaynnistaPeli() {
+		const path = resolve('/game');
+		await goto(path);
 	}
 
-	function käsitteleTeemanVaihtaminen(event: Event) {
+	function kasitteleThemenVaihtaminen(event: Event) {
 		const target = event.target as HTMLSelectElement;
-		const valittu = target.value as Teema;
-		asetaTeema(valittu);
+		const valittu = target.value as Theme;
+		setTheme(valittu);
 	}
 
 	const asetukset: Asetusvalikko[] = [
 		{
-			teksti: 'Teema',
-			placeholder: 'Valitse teema',
+			teksti: 'Theme',
+			placeholder: 'Valitse theme',
 			optiot: ['Kissat', 'Koirat', 'Opettajat', 'Tikologot'],
 			type: 'theme'
 		},
@@ -58,7 +58,7 @@
 		{#if asetus.type === 'theme'}
 			<div class="asetus-item">
 				<label for="theme-select">{asetus.teksti}</label>
-				<select value={pelinTila.teema} onchange={käsitteleTeemanVaihtaminen}>
+				<select value={gameState.theme} onchange={kasitteleThemenVaihtaminen}>
 					<option disabled value="">{asetus.placeholder}</option>
 					{#each asetus.optiot as optio (optio)}
 						<option value={optio.toLowerCase()}>{optio}</option>
@@ -76,12 +76,7 @@
 </div>
 
 <div class="nappi">
-	<Button
-		text="Aloita peli!"
-		onclick={() => {
-			void goto('/game'); // TÄÄKI PITÄÄ KATTOO JAKEN KANSSA
-		}}
-	/>
+	<Button text="Aloita peli!" onclick={kaynnistaPeli} />
 </div>
 
 <style>
